@@ -9,7 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 const corsOptions = {
-    origin: "http://client-projector.vercel.apps",
+    origin: ["https://client.vercel.app", "http://localhost:3000"],
+    credentials:true
 };
 
 app.post('/submit',cors(corsOptions),(req,res)=>{
