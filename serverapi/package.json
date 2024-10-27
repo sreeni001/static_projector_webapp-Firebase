@@ -1,0 +1,25 @@
+{
+  "name": "customapi",
+  "version": "1.0.0",
+  "description": "APi for Login and other requirements in the webpage\"",
+  "main": "api.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "keywords": [
+    "API",
+    "CustomAPI"
+  ],
+  "author": "Sreenivaasan G",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase": "^11.0.1",
+    "firebase-admin": "^12.7.0",
+    "mongodb": "^6.10.0",
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0"
+  }
+}

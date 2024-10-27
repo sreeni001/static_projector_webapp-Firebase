@@ -1,0 +1,18 @@
+.loginContainer{
+   /* background-color: antiquewhite; */
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.ContentContainer{
+    background-color:#eae7e2;
+    height:100%; 
+    border-radius:25px;
+
+}
+.ParentContainer{
+  height:100vh;
+  display:grid;  
+  grid-template-columns: 1fr 4fr;
+}
