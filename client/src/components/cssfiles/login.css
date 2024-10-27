@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+.login-logo{
+    height:150px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;
+    position:relative;
+}
+.Container{
+    height: 95vh;
+    flex-direction: column;
+      margin: 0;
+      padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    
+    
+}
+input{
+    text-align:center;
+    display: flex;
+    color:Black;
+    justify-content: center;
+    align-items:center;
+    height:40px;
+    width:100%;
+    
+    font-size:20px;
+    border-radius:15px;
+    box-shadow: none;
+    background-color:pink;
+    border-color:pink;
+    outline:none;
+    border:none;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.LoginButton{
+    height:40px;
+    position: relative;
+    margin-top:10px;
+    left:41%;
+}
