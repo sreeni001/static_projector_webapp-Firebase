@@ -5,7 +5,7 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, onChildAdded, onChildChanged } from 'firebase/database';
 
 const firebaseConfig = {
-    apiKey:process.env.REACT_APP_api_Key,
+    apiKey:"AIzaSyC8SGH4UFXfEegTpJlTIfTlw8oqWpAXc5s",
     authDomain: "acceog-99589.firebaseapp.com",
     databaseURL: "https://acceog-99589-default-rtdb.firebaseio.com",
     projectId: "acceog-99589",
@@ -98,7 +98,7 @@ function Dashboard(props){
     const fetchData = async (day, staff) => {
         try {
             console.log("fetch_Data:", day, staff);
-            const response = await fetch("http://localhost:4000/fetchTeacherLogs", {
+            const response = await fetch("https://server.vercel.app/fetchTeacherLogs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -138,7 +138,7 @@ function Dashboard(props){
         if (!classId || !date) return;
 
         try {
-            const response = await fetch("http://localhost:4000/fetchClassLogs", {
+            const response = await fetch("https://server.vercel.app/fetchClassLogs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -172,7 +172,7 @@ function Dashboard(props){
 
     const ClassinDb = async () => {
         try {
-            const response = await fetch("http://localhost:4000/fetchClassrooms");
+            const response = await fetch("https://server.vercel.app/fetchClassrooms");
             if (response.ok) {
                 const result = await response.json();
                 AvailableClassRoom(result);
@@ -186,7 +186,7 @@ function Dashboard(props){
 
     const StaffinDb = async () => {
         try {
-            const response = await fetch("http://localhost:4000/StaffList");
+            const response = await fetch("https://server.vercel.app/StaffList");
             if (response.ok) {
                 const result = await response.json();
                 selectStaff(result);
